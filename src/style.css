@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#toolbar {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+#toolbar button {
+  margin-right: 5px;
+}
+
+#days {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.day {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.day h3 {
+  margin-top: 0;
+}
+
+.item {
+  background: white;
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 5px;
+  cursor: move;
+}
+
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.item-detail {
+  display: none;
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 10px;
+  margin-top: 5px;
+}
+.item-detail.show {
+  display: block;
+}
